@@ -99,6 +99,25 @@ view.trailingAnchor),
 keyboardVC.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)}
 ```
 After adding constraints, the VCs background color displayed:<br/>
+[vc background colors displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/vc%20background%20colors%20displayed.png)<br/>
+## ***Keyboard:***
+In [KeyboardViewController.swift](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/Wordle%202.0%20App/Core/KeyboardViewController.swift), create keyboard collection views:
+```Swift 
+class KeyboardViewController: UIViewController {
+    let letters = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
+    private var keys: [[Character]] = []
+    let collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 2
+        let collectionView = UICollectionView(frame: .zero,
+collectionViewLayout: layout)
+        collectionView.translatesAutoresizingMaskIntoConstraints =
+false
+        collectionView.backgroundColor = .yellow
+        return collectionView
+    }()
+```
+
 
 
 

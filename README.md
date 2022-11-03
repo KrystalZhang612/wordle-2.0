@@ -52,6 +52,7 @@ My replica of the popular word game Wordle, developed programmatically using UIK
 [Swift 5](https://www.swift.org/blog/swift-5-released/)<br/>
 <div>
         <img src ="https://github.com/devicons/devicon/blob/master/icons/xcode/xcode-plain.svg" title ="Xcode" alt ="Xcode" width ="60" height ="60"/>&nbsp; 
+        <img src ="https://github.com/devicons/devicon/blob/master/icons/swift/swift-original.svg" title ="SwiftUI" alt = "SwiftUI" width ="60" height ="60"/>&nbsp; 
         
 </div>
 

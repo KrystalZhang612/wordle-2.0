@@ -4,7 +4,6 @@
 //
 //  Created by Krystal Zhang on 11/1/22.
 //
-
 import UIKit
 
 //UI
@@ -17,8 +16,7 @@ class ViewController: UIViewController {
     let answers = [
         "abuse","adult", "agent", "anger", "apple", "award", "basis", "beach",
         "birth", "block", "blood", "board", "brain","bread", "break", "brown"
-    ]
-    
+    ] 
     var answer = ""
 
     private var guesses: [[Character?]] = Array(
@@ -103,7 +101,6 @@ extension ViewController: BoardViewControllerDataSource  {
         if indexedAnswer[indexPath.row] == letter {
             return .systemGreen
         }
-        return .systemOrange
-        
+        return .systemOrange        
     }
 }

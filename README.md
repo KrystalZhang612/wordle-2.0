@@ -1,5 +1,11 @@
 # KrystalZhang-Wordle 2.0 App
 My replica of the popular word game Wordle, developed programmatically using UIKit, Swift, and CGRect to build the UI, logics and various extensions. The App allows users to play the Wordle game by guessing the correct 5-lettered word gievn within 6 tries. 
+## Copyright and Commercial Use Disclaimer
+⏬
+
+### ***Please carefully read [LICENSE.md]() about the Open Source restrictions and the personal use policy of this project under [GPL-3.0 license](), any commericial uses on this project by other than the owner [@KrystalZhang612]() or the authorized users and organizations, including unauthorized modifications, forks, pull requests, and other commercial-related uses will be subjected to copyright violation with sebsequent legal concerns.***
+
+
 ## Wordle 2.0 App Overview:
 <p align = "center">
         <img src = "https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle2.0-overview1.png" width = "401.8181" height ="839.090"/>&nbsp; 

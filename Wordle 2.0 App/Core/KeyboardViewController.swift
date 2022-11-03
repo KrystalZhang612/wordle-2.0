@@ -4,19 +4,16 @@
 //
 //  Created by Krystal Zhang on 11/1/22.
 //
-
 import UIKit
 
 protocol KeyboardViewControllerDelegate: AnyObject {
     func keyboardViewController(
         _vc: KeyboardViewController,
-        didTapKey letter: Character
-        
+        didTapKey letter: Character   
     )
 }
 
 class KeyboardViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource{
-    
     weak var delegate: KeyboardViewControllerDelegate?
     
     let letters = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
@@ -32,8 +29,7 @@ class KeyboardViewController: UIViewController, UICollectionViewDelegateFlowLayo
             KeyCell.identifier)
         return collectionView
     }()
-    
-
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
@@ -101,8 +97,3 @@ extension KeyboardViewController {
         delegate?.keyboardViewController(_vc: self, didTapKey: letter)
     }
 }
-
-
-
-
-

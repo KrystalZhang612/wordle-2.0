@@ -45,6 +45,12 @@ My replica of the popular word game Wordle, developed programmatically using UIK
 ### Run the project, choose Simulator `iPhone 14` or `iPhone 14 Pro` for best compatiability.
 
 # 🛠️ Developing Languages, Tools, and Techniques Needed
+[Xcode 14.0.1](https://developer.apple.com/documentation/xcode-release-notes/xcode-14_0_1-release-notes)<br/>
+[Xcode Simulator iOS 16.0 iPhone 14 Pro](https://docs.expo.dev/workflow/ios-simulator/)<br/>
+`(Compatible with iOS 15.2+)`<br/>
+[SwiftUI](https://developer.apple.com/xcode/swiftui/)<br/>
+[Swift 5](https://www.swift.org/blog/swift-5-released/)<br/>
+
 
 
 

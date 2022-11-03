@@ -276,9 +276,7 @@ let answers = ["abuse","adult", "agent", "anger", "apple", "award", "basis", "be
 ```
 Test word BRAIN works:<br/>
 [test BRAIN works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/test%20BRAIN%20works.png)<br/>
-
-
-
+# Debugging&Troubleshooting
 
 
 

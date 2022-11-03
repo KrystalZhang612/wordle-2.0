@@ -44,5 +44,8 @@ My replica of the popular word game Wordle, developed programmatically using UIK
 ### Compatible with `MacOS Monterey 12.0` or higher versions
 ### Run the project, choose Simulator `iPhone 14` or `iPhone 14 Pro` for best compatiability.
 
+# 🛠️ Developing Languages, Tools, and Techniques Needed
+
+
 
 

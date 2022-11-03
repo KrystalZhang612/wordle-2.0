@@ -37,6 +37,7 @@ My replica of the popular word game Wordle, developed programmatically using UIK
 | macOS Mojave     | ✅                 |
 | macOS Monterey   | ✅                 |
 
+# Method to Run & Test the Project Locally
 
 
 

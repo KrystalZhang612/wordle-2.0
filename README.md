@@ -18,7 +18,7 @@ My replica of the popular word game Wordle, developed programmatically using UIK
 
 
 # Build
-[Method to Run & Test the Project Locally]()<br/>
+[Method to Run & Test the Project Locally](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#method-to-run--test-the-project-locally)<br/>
 [Prerequisites & Setups]()<br/>
 [Debugging&Troubleshooting]()<br/> 
 [Synchronous Developing Notes]()<br/> 

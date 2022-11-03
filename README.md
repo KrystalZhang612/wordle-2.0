@@ -117,8 +117,48 @@ false
         return collectionView
     }()
 ```
+Run the simulator to test if Keyboard UI Collection VIew working:<br/>
+[keyboard ui collection view works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20ui%20collection%20view%20works.png)<br/>
+## ***Delegate Data Source:***
+Assign delegate and datasource to self in viewdidload function:
+```Swift 
+ collectionView.delegate = self
+  collectionView.dataSource = self
+```
+## ***Keys:***
+Create keyboard view controller extensions components.<br/>
+Initialize in [KeyCell.swift](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/Wordle%202.0%20App/Core/KeyCell.swift):
+```Swift 
+       override init(frame: CGRect) {
+        super.init(frame: frame)
+        backgroundColor = .systemGray5
+    }
+    required init?(coder: NSCoder){
+        fatalError()
+    }
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Testing Result 
+[vc background colors displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/vc%20background%20colors%20displayed.png)<br/>
+[keyboard ui collection view works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20ui%20collection%20view%20works.png)<br/>
+
+
 
 
 

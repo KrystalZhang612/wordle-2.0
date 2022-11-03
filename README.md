@@ -65,7 +65,20 @@ Give keyboard and board different background colors:
 view.backgroundColor = .red/.blue
 ```
 # Synchronous Developing Notes:
-
+## ***Main Architecture:***
+Add main view controllers to build architecture in [ViewController.swift](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/Wordle%202.0%20App/Core/ViewController.swift):
+```Swift 
+private func addChildren(){
+        addChild(keyboardVC)
+        keyboardVC.didMove(toParent: self)
+        keyboardVC.view.translatesAutoresizingMaskIntoConstraints = false 
+        view.addSubview(keyboardVC.view)
+        addChild(boardVC)
+        boardVC.didMove(toParent: self)
+        boardVC.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(boardVC.view)
+}        
+```
 
 
 

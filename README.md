@@ -129,7 +129,7 @@ Assign delegate and datasource to self in viewdidload function:
 Create keyboard view controller extensions components.<br/>
 Initialize in [KeyCell.swift](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/Wordle%202.0%20App/Core/KeyCell.swift):
 ```Swift 
-       override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .systemGray5
     }

@@ -137,12 +137,82 @@ Initialize in [KeyCell.swift](https://github.com/KrystalZhang612/KrystalZhang-Wo
         fatalError()
     }
 ```
-
-
-
-
-
-
+Now keyboard-shaped squares displayed underneath:<br/>
+[keyboard squares displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20squares%20displayed.png)<br/>
+## ***Centering the Keyboard Cells:***
+Adjust keyboard cells alignment to make them centered:
+```Swift 
+ func collectionView(_ collectionView: UICollectionView, layout
+collectionViewLayout: UICollectionViewLayout, insetForSectionAt
+section: Int) -> UIEdgeInsets {
+        var left: CGFloat = 1
+        var right: CGFloat = 1
+        let margin: CGFloat = 20
+        let size: CGFloat = (collectionView.frame.size.width -
+margin)/10
+        let count: CGFloat =
+CGFloat(collectionView.numberOfItems(inSection: section))
+        let inset: CGFloat = (collectionView.frame.size.width - (size
+* count) - (2 * count))/2
+        left = inset
+        right = inset
+        return UIEdgeInsets(
+            top: 2,
+            left: left,
+            bottom: 2,
+            right: right
+)
+```
+Now keyboard cells are all centered:<br/>
+[keyboard cell centered.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20cell%20centered.png)<br/> 
+## ***Board Controller:***
+Configure in [KeyboardViewController.swift](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/Wordle%202.0%20App/Core/KeyboardViewController.swift):
+```Swift
+let letter = keys[indexPath.section][indexPath.row]
+        cell.configure(with: letter)
+        return cell
+```
+Now all keys letters are visible:<br/> 
+[keys letters displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keys%20letters%20displayed.png)<br/>
+In [BoardViewController.swift](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/Wordle%202.0%20App/Core/BoardViewController.swift):<br/> 
+Similar to Keyboard view controller, set all board characters with A to test out:
+```Swift 
+func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KeyCell.identifier, for: indexPath) as? KeyCell else {
+            fatalError()
+        }
+        cell.configure(with: Character("A"))
+return cell
+```
+[wordle board A character test works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%20board%20A%20character%20test%20works.png)<br/> 
+To create an interaction on the keyboard cells:
+```Swift 
+ protocol KeyboardViewControllerDelegate: AnyObject {
+    func keyboardViewController(
+        _vc: KeyboardViewController,
+        didTapKey letter: Character
+...
+weak var delegate: KeyboardViewControllerDelegate?
+```
+And to use delegate:
+```Swift 
+func collectionView(_ collectionView: UICollectionView,
+didSelectItemAt indexPath: IndexPath) {
+       //
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let letter = keys[indexPath.section][indexPath.row]
+        delegate?.keyboardViewController(_vc: self, didTapKey: letter)
+} }
+```
+To get actual access to the delegate, add an extension in ViewController.swift:
+```Swift 
+extension ViewController: KeyboardViewControllerDelegate {
+    func keyboardViewController(_vc: KeyboardViewController, didTapKey
+letter: Character) {
+        print(letter)
+    }
+}
+```
+So now when we type the letter on the simulator keyboard, the letters appear on the console.
 
 
 
@@ -157,6 +227,14 @@ Initialize in [KeyCell.swift](https://github.com/KrystalZhang612/KrystalZhang-Wo
 # Testing Result 
 [vc background colors displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/vc%20background%20colors%20displayed.png)<br/>
 [keyboard ui collection view works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20ui%20collection%20view%20works.png)<br/>
+[keyboard squares displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20squares%20displayed.png)<br/>
+[keyboard cell centered.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20cell%20centered.png)<br/> 
+[keys letters displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keys%20letters%20displayed.png)<br/>
+[wordle board A character test works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%20board%20A%20character%20test%20works.png)<br/> 
+
+
+
+
 
 
 

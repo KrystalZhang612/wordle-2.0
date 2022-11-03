@@ -213,10 +213,69 @@ letter: Character) {
 }
 ```
 So now when we type the letter on the simulator keyboard, the letters appear on the console.
-
-
-
-
+## ***Data Source:***
+Add a protocol to get data source in BoardViewController.swift:
+```Swift 
+protocol BoardViewControllerDataSource: AnyObject {
+var currentGuesses: [[Character?]] {get}}
+```
+Then to get the board showing, add boardVC extension in ViewController.swift:
+```Swift 
+ extension ViewController: BoardViewControllerDataSource  {
+    var currentGuesses: [[Character?]] {
+        return guesses
+    }
+}
+```
+Now update these guesses and tell the board controllers to reload itself:
+```Swift 
+public func reloadData(){
+        collectionView.reloadData()
+    }
+}
+```
+To make the key tap responsive and tapped letters show up on board, we need to configure data source in BoardViewController.swift:
+```Swift 
+ let guesses = datasource?.currentGuesses ?? []
+        if let letter =
+            guesses[indexPath.section][indexPath.row] {
+            cell.configure(with: letter)
+        }
+```
+Now when tap keyboard, the tapped letters responded and become visible on board:<br/> 
+[tapped letters displayed on board in order.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/tapped%20letters%20displayed%20on%20board%20in%20order.png)<br/>
+## ***Logic:***
+Set up the rule: if the tapped letter exists in the word and at the correct spot, green color, if the tapped letter exists in the word and at the wrong spot, orange color, else if the tapped letter is not in the word, gray color. In ViewController.swift:
+```Swift 
+extension ViewController: BoardViewControllerDataSource  {
+    var currentGuesses: [[Character?]] {
+        return guesses
+    }
+    func boxColor(at indexPath: IndexPath) -> UIColor? {
+        let rowIndex = indexPath.section
+        let count = guesses[rowIndex].compactMap({ $0 }).count
+        guard count == 5 else {
+return nil }
+        let indexedAnswer = Array(answer)
+        guard let letter = guesses[indexPath.section][indexPath.row],
+indexedAnswer.contains(letter) else {
+return nil }
+        if indexedAnswer[indexPath.row] == letter {
+            return .systemGreen
+}
+        return .systemOrange
+```
+Test out with the answer word: AFTER:<br/>
+[wordle works with the answer AFTER.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%20works%20with%20the%20answer%20AFTER.png)<br/>
+Add app name:<br/> 
+Other -> Main -> ViewController->View-> Editor-> Embed in-> Navigator-> Right hand bar<br/>
+[wordle 2.0 title displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%202.0%20title%20displayed.png)<br/> 
+Now import a bunch of A-B five-lettered words:
+```Swift 
+let answers = ["abuse","adult", "agent", "anger", "apple", "award", "basis", "beach","birth", "block", "blood", "board", "brain","bread", "break", "brown"]
+```
+Test word BRAIN works:<br/>
+[test BRAIN works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/test%20BRAIN%20works.png)<br/>
 
 
 
@@ -231,6 +290,15 @@ So now when we type the letter on the simulator keyboard, the letters appear on 
 [keyboard cell centered.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20cell%20centered.png)<br/> 
 [keys letters displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keys%20letters%20displayed.png)<br/>
 [wordle board A character test works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%20board%20A%20character%20test%20works.png)<br/> 
+[tapped letters displayed on board in order.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/tapped%20letters%20displayed%20on%20board%20in%20order.png)<br/>
+[wordle works with the answer AFTER.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%20works%20with%20the%20answer%20AFTER.png)<br/>
+[wordle 2.0 title displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%202.0%20title%20displayed.png)<br/> 
+[test BRAIN works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/test%20BRAIN%20works.png)<br/>
+
+
+
+
+
 
 
 

@@ -58,6 +58,8 @@ My replica of the popular word game Wordle, developed programmatically using UIK
         <img src ="https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/cgrect%20logo.png" title ="CGRect" alt ="CGRect" width = "171" height ="60"/> 
 </div>
 
+# Prerequisites & Setups
+
 
 
 

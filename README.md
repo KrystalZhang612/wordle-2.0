@@ -24,8 +24,10 @@ My replica of the popular word game Wordle, developed programmatically using UIK
 [Synchronous Developing Notes]()<br/> 
 [Testing Result]()
 
-
-
+# Contribution
+[Author]()
+# Functionalities/Demo
+-  Similar rules to the original Wordle App. A user has six tries to guess a five-letter word. To begin, enter a word. The App will reveal whether the word entered has any correct letters. A green letter is in the correct spot, an orange letter is in the word but in an incorrect spot, and a gray letter is not in the word. The user will win by guessing the word correctly within six tries.
 
 
 

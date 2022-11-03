@@ -11,7 +11,6 @@ protocol BoardViewControllerDataSource: AnyObject {
     var currentGuesses: [[Character?]] {get}
     func boxColor(at indexPath: IndexPath) -> UIColor?
 }
-
 class BoardViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource{
     
     weak var datasource: BoardViewControllerDataSource?
@@ -27,7 +26,6 @@ class BoardViewController: UIViewController, UICollectionViewDelegateFlowLayout,
         return collectionView
     }()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
@@ -86,9 +84,7 @@ extension BoardViewController {
             right: 2
         )
     }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //
-        
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {       
     }
 }
 

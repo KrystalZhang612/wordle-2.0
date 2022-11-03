@@ -16,3 +16,20 @@ My replica of the popular word game Wordle, developed programmatically using UIK
         <img src ="https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle2.0-overview6.png" width = "401.8181" height ="839.090"/>&nbsp;    
 </p> 
 
+
+# Build
+[Method to Run & Test the Project Locally]()<br/>
+[Prerequisites & Setups]()<br/>
+[Debugging&Troubleshooting]()<br/> 
+[Synchronous Developing Notes]()<br/> 
+[Testing Result]()
+
+
+
+
+
+
+
+
+
+

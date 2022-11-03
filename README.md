@@ -22,7 +22,7 @@ My replica of the popular word game Wordle, developed programmatically using UIK
 [Prerequisites & Setups](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#prerequisites--setups)<br/>
 [Debugging&Troubleshooting]()<br/> 
 [Synchronous Developing Notes](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#synchronous-developing-notes)<br/> 
-[Testing Result]()
+[Testing Result](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#testing-result)
 
 # Contribution
 [Author]()

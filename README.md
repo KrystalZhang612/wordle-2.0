@@ -20,7 +20,6 @@ My replica of the popular word game Wordle, developed programmatically using UIK
 # Build
 [Method to Run & Test the Project Locally](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#method-to-run--test-the-project-locally)<br/>
 [Prerequisites & Setups](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#prerequisites--setups)<br/>
-[Debugging&Troubleshooting](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#debuggingtroubleshooting)<br/> 
 [Synchronous Developing Notes](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#synchronous-developing-notes)<br/> 
 [Testing Result](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#testing-result)
 
@@ -276,10 +275,6 @@ let answers = ["abuse","adult", "agent", "anger", "apple", "award", "basis", "be
 ```
 Test word BRAIN works:<br/>
 [test BRAIN works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/test%20BRAIN%20works.png)<br/>
-# Debugging&Troubleshooting
-
-
-
 
 # Testing Result 
 [vc background colors displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/vc%20background%20colors%20displayed.png)<br/>
@@ -292,6 +287,8 @@ Test word BRAIN works:<br/>
 [wordle works with the answer AFTER.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%20works%20with%20the%20answer%20AFTER.png)<br/>
 [wordle 2.0 title displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%202.0%20title%20displayed.png)<br/> 
 [test BRAIN works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/test%20BRAIN%20works.png)<br/>
+
+
 
 
 

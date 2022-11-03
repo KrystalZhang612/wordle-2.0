@@ -59,6 +59,7 @@ My replica of the popular word game Wordle, developed programmatically using UIK
 </div>
 
 # Prerequisites & Setups
+Create two Cocoa Class files [KeyboardViewController.swift](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/Wordle%202.0%20App/Core/KeyboardViewController.swift) and
 
 
 

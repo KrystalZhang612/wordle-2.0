@@ -21,7 +21,8 @@ My replica of the popular word game Wordle, developed programmatically using UIK
 [Method to Run & Test the Project Locally](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#method-to-run--test-the-project-locally)<br/>
 [Prerequisites & Setups](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#prerequisites--setups)<br/>
 [Synchronous Developing Notes](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#synchronous-developing-notes)<br/> 
-[Testing Result](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#testing-result)
+[Testing Result](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#testing-result)<br/>
+[Tags and Topics]()
 
 # Contribution
 [Author](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/README.md#author)
@@ -287,6 +288,8 @@ Test word BRAIN works:<br/>
 [wordle works with the answer AFTER.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%20works%20with%20the%20answer%20AFTER.png)<br/>
 [wordle 2.0 title displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%202.0%20title%20displayed.png)<br/> 
 [test BRAIN works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/test%20BRAIN%20works.png)<br/>
+
+# Tags and Topics 
 
 # Author
 Krystal Zhang 

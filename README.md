@@ -275,6 +275,19 @@ Test word BRAIN works:<br/>
 [test BRAIN works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/test%20BRAIN%20works.PNG)<br/>
 
 # Testing Result 
+<p align = "center">
+        <img src = "https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/vc%20background%20colors%20displayed.PNG" width = "401.8181" height ="839.090">&nbsp;
+        <img src = "https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/keyboard%20ui%20collection%20view%20works.PNG" width = "401.8181" height ="839.090">&nbsp;
+        <img src = "https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/keyboard%20squares%20displayed.PNG" width = "401.8181" height ="839.090">&nbsp;
+        <img src = "https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/keyboard%20cell%20centered.PNG" width = "401.8181" height ="839.090">&nbsp;
+        <img src = "https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/keys%20letters%20displayed.PNG" width = "401.8181" height ="839.090">&nbsp;
+        <img src = "https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/wordle%20board%20A%20character%20test%20works.PNG" width = "401.8181" height ="839.090">&nbsp;
+        <img src = "https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/tapped%20letters%20displayed%20on%20board%20in%20order.PNG" width = "401.8181" height ="839.090">&nbsp;
+        <img src = "https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/wordle%20works%20with%20the%20answer%20AFTER.PNG" width = "401.8181" height ="839.090">&nbsp;
+        <img src = "https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/wordle%202.0%20title%20displayed.PNG" width = "401.8181" height ="839.090">&nbsp;
+        <img src = "https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/test%20BRAIN%20works.PNG" width = "401.8181" height ="839.090">&nbsp;
+</p>
+
 
 
 # Tags and Topics 

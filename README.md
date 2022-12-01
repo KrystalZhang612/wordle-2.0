@@ -96,7 +96,7 @@ view.trailingAnchor),
 keyboardVC.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)}
 ```
 After adding constraints, the VCs background color displayed:<br/>
-[vc background colors displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/vc%20background%20colors%20displayed.png)<br/>
+[vc background colors displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/vc%20background%20colors%20displayed.PNG)<br/>
 ## ***Keyboard:***
 In [KeyboardViewController.swift](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/Wordle%202.0%20App/Core/KeyboardViewController.swift), create keyboard collection views:
 ```Swift 
@@ -115,7 +115,7 @@ false
     }()
 ```
 Run the simulator to test if Keyboard UI Collection VIew working:<br/>
-[keyboard ui collection view works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20ui%20collection%20view%20works.png)<br/>
+[keyboard ui collection view works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/keyboard%20ui%20collection%20view%20works.PNG)<br/>
 ## ***Delegate Data Source:***
 Assign delegate and datasource to self in viewdidload function:
 ```Swift 
@@ -135,7 +135,7 @@ Initialize in [KeyCell.swift](https://github.com/KrystalZhang612/KrystalZhang-Wo
     }
 ```
 Now keyboard-shaped squares displayed underneath:<br/>
-[keyboard squares displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20squares%20displayed.png)<br/>
+[keyboard squares displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/keyboard%20squares%20displayed.PNG)<br/>
 ## ***Centering the Keyboard Cells:***
 Adjust keyboard cells alignment to make them centered:
 ```Swift 
@@ -161,7 +161,7 @@ CGFloat(collectionView.numberOfItems(inSection: section))
 )
 ```
 Now keyboard cells are all centered:<br/>
-[keyboard cell centered.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20cell%20centered.png)<br/> 
+[keyboard cell centered.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/keyboard%20cell%20centered.PNG)<br/> 
 ## ***Board Controller:***
 Configure in [KeyboardViewController.swift](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/Wordle%202.0%20App/Core/KeyboardViewController.swift):
 ```Swift
@@ -170,7 +170,7 @@ let letter = keys[indexPath.section][indexPath.row]
         return cell
 ```
 Now all keys letters are visible:<br/> 
-[keys letters displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keys%20letters%20displayed.png)<br/>
+[keys letters displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/keys%20letters%20displayed.PNG)<br/>
 In [BoardViewController.swift](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/Wordle%202.0%20App/Core/BoardViewController.swift):<br/> 
 Similar to Keyboard view controller, set all board characters with A to test out:
 ```Swift 
@@ -180,7 +180,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
         cell.configure(with: Character("A"))
 return cell
 ```
-[wordle board A character test works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%20board%20A%20character%20test%20works.png)<br/> 
+[wordle board A character test works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/wordle%20board%20A%20character%20test%20works.PNG)<br/> 
 To create an interaction on the keyboard cells:
 ```Swift 
  protocol KeyboardViewControllerDelegate: AnyObject {
@@ -240,7 +240,7 @@ To make the key tap responsive and tapped letters show up on board, we need to c
         }
 ```
 Now when tap keyboard, the tapped letters responded and become visible on board:<br/> 
-[tapped letters displayed on board in order.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/tapped%20letters%20displayed%20on%20board%20in%20order.png)<br/>
+[tapped letters displayed on board in order.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/tapped%20letters%20displayed%20on%20board%20in%20order.PNG)<br/>
 ## ***Logic:***
 Set up the rule: if the tapped letter exists in the word and at the correct spot, green color, if the tapped letter exists in the word and at the wrong spot, orange color, else if the tapped letter is not in the word, gray color. In ViewController.swift:
 ```Swift 
@@ -263,28 +263,19 @@ return nil }
         return .systemOrange
 ```
 Test out with the answer word: AFTER:<br/>
-[wordle works with the answer AFTER.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%20works%20with%20the%20answer%20AFTER.png)<br/>
+[wordle works with the answer AFTER.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/wordle%20works%20with%20the%20answer%20AFTER.PNG)<br/>
 Add app name:<br/> 
 Other -> Main -> ViewController->View-> Editor-> Embed in-> Navigator-> Right hand bar<br/>
-[wordle 2.0 title displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%202.0%20title%20displayed.png)<br/> 
+[wordle 2.0 title displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/wordle%202.0%20title%20displayed.PNG)<br/> 
 Now import a bunch of A-B five-lettered words:
 ```Swift 
 let answers = ["abuse","adult", "agent", "anger", "apple", "award", "basis", "beach","birth", "block", "blood", "board", "brain","bread", "break", "brown"]
 ```
 Test word BRAIN works:<br/>
-[test BRAIN works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/test%20BRAIN%20works.png)<br/>
+[test BRAIN works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/testing-result-Wordle%202.0%20App/test%20BRAIN%20works.PNG)<br/>
 
 # Testing Result 
-[vc background colors displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/vc%20background%20colors%20displayed.png)<br/>
-[keyboard ui collection view works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20ui%20collection%20view%20works.png)<br/>
-[keyboard squares displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20squares%20displayed.png)<br/>
-[keyboard cell centered.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keyboard%20cell%20centered.png)<br/> 
-[keys letters displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/keys%20letters%20displayed.png)<br/>
-[wordle board A character test works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%20board%20A%20character%20test%20works.png)<br/> 
-[tapped letters displayed on board in order.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/tapped%20letters%20displayed%20on%20board%20in%20order.png)<br/>
-[wordle works with the answer AFTER.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%20works%20with%20the%20answer%20AFTER.png)<br/>
-[wordle 2.0 title displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/wordle%202.0%20title%20displayed.png)<br/> 
-[test BRAIN works.PNG](https://github.com/KrystalZhang612/KrystalZhang-Wordle-2.0-App/blob/main/test%20BRAIN%20works.png)<br/>
+
 
 # Tags and Topics 
 swift, cgrect, swiftui, swift5, uikit. 
